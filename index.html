@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lankora - Discover Sri Lanka</title>
+  <link href="https://fonts.googleapis.com/css2?family=Amaranth:wght@400;700&family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header class="navbar">
+    <a href="#home" class="logo">
+      <img src="images/logo.png" alt="Lankora logo">
+      <span>Lankora</span>
+    </a>
+    <nav>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About Sri Lanka</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#places">Popular places</a></li>
+        <li><a href="#festivals">Upcoming festivals</a></li>
+        <li><a href="#guide">Tourist guide</a></li>
+        <li><a href="#plan">Plan My Trip</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+
+    <section id="home" class="hero">
+      <div class="hero-text">
+        <h1>Discover Amazing Places</h1>
+        <p>Explore beautiful destinations, discover new experiences, and plan your next unforgettable journey.</p>
+      </div>
+
+      <div class="hero-scroll">
+        <div class="column column-up">
+          <div class="photo-card"><img src="images/nuwara-eliya.jpg" alt="Nuwara Eliya"><div class="caption"><h3>Nuwara Eliya</h3><small>Central</small></div></div>
+          <div class="photo-card"><img src="images/kandy.jpg" alt="Kandy"><div class="caption"><h3>Kandy</h3><small>Central</small></div></div>
+          <div class="photo-card"><img src="images/yala.jpg" alt="Yala"><div class="caption"><h3>Yala</h3><small>Hambantota</small></div></div>
+        
+          <div class="photo-card"><img src="images/nuwara-eliya.jpg" alt="Nuwara Eliya"><div class="caption"><h3>Nuwara Eliya</h3><small>Central</small></div></div>
+          <div class="photo-card"><img src="images/kandy.jpg" alt="Kandy"><div class="caption"><h3>Kandy</h3><small>Central</small></div></div>
+          <div class="photo-card"><img src="images/yala.jpg" alt="Yala"><div class="caption"><h3>Yala</h3><small>Hambantota</small></div></div>
+        </div>
+        <div class="column column-down">
+          <div class="photo-card"><img src="images/sigiriya.jpg" alt="Sigiriya"><div class="caption"><h3>Sigiriya</h3><small>Dambulla</small></div></div>
+          <div class="photo-card"><img src="images/ella.jpg" alt="Ella"><div class="caption"><h3>Ella</h3><small>Badulla</small></div></div>
+          <div class="photo-card"><img src="images/mirissa.jpg" alt="Mirissa"><div class="caption"><h3>Mirissa</h3><small>Matara</small></div></div>
+          <div class="photo-card"><img src="images/sigiriya.jpg" alt="Sigiriya"><div class="caption"><h3>Sigiriya</h3><small>Dambulla</small></div></div>
+          <div class="photo-card"><img src="images/ella.jpg" alt="Ella"><div class="caption"><h3>Ella</h3><small>Badulla</small></div></div>
+          <div class="photo-card"><img src="images/mirissa.jpg" alt="Mirissa"><div class="caption"><h3>Mirissa</h3><small>Matara</small></div></div>
+        </div>
+      </div>
+    </section>
+
+
+    <section id="about" class="welcome">
+      <h2>Welcome to Sri Lanka</h2>
+      <p>
+        Sri Lanka is a tropical island paradise known for its golden beaches, lush green mountains,
+        ancient heritage, and rich cultural traditions. From the breathtaking beauty of Ella and the
+        historic wonders of Sigiriya to the wildlife of Yala and the coastal charm of Galle, every
+        journey offers a unique experience. Discover the magic of Sri Lanka, where nature, culture,
+        and adventure come together.
+      </p>
+      <a href="#places" class="btn btn-light">Explore Destinations</a>
+    </section>
+
+    <section id="plan" class="plan">
+      <h2>Plan Your Dream Trip</h2>
+      <p class="subtitle">Create your perfect Sri Lankan adventure with Lankora.</p>
+
+      <form id="tripForm" novalidate>
+        <label for="destination">Destination</label>
+        <select id="destination" required>
+          <option value="">Where would you like to go? Select your destination</option>
+          <option>Ella</option>
+          <option>Kandy</option>
+          <option>Sigiriya</option>
+          <option>Galle</option>
+          <option>Yala</option>
+          <option>Nuwara Eliya</option>
+          <option>Mirissa</option>
+        </select>
+
+        <div class="date-row">
+          <div>
+            <label for="startDate">Start Date</label>
+            <input type="date" id="startDate" required>
+          </div>
+          <div>
+            <label for="endDate">End Date</label>
+            <input type="date" id="endDate" required>
+          </div>
+        </div>
+
+        <p class="label">What experiences do you like?</p>
+        <div class="experiences">
+          <label><input type="checkbox" name="exp" value="Beaches"> Beaches</label>
+          <label><input type="checkbox" name="exp" value="Nature"> Nature</label>
+          <label><input type="checkbox" name="exp" value="Culture"> Culture</label>
+          <label><input type="checkbox" name="exp" value="Adventure"> Adventure</label>
+        </div>
+
+        <button type="submit" class="btn btn-dark">Create My Trip</button>
+        <p id="tripMessage" role="status" aria-live="polite" aria-atomic="true"></p>
+      </form>
+    </section>
+
+    <section id="places" class="places">
+      <h2>Popular Places</h2>
+      <p class="subtitle">Explore the most beautiful destinations in Sri Lanka.</p>
+
+      <div class="card-grid">
+        <div class="place-card">
+          <img src="images/ella.jpg" alt="Ella">
+          <h3>Ella</h3>
+          <p>Discover breathtaking mountains, waterfalls, and scenic train journeys.</p>
+          <button type="button" class="btn btn-green">View more</button>
+        </div>
+        <div class="place-card">
+          <img src="images/kandy.jpg" alt="Kandy">
+          <h3>Kandy</h3>
+          <p>Experience the cultural capital and the sacred Temple of the Tooth Relic.</p>
+          <button type="button" class="btn btn-green">View more</button>
+        </div>
+        <div class="place-card">
+          <img src="images/sigiriya.jpg" alt="Sigiriya">
+          <h3>Sigiriya</h3>
+          <p>Explore the ancient rock fortress and its stunning historical frescoes.</p>
+          <button type="button" class="btn btn-green">View more</button>
+        </div>
+        <div class="place-card">
+          <img src="images/galle.jpg" alt="Galle">
+          <h3>Galle</h3>
+          <p>Wander through the historic Dutch Fort and coastal charm.</p>
+          <button type="button" class="btn btn-green">View more</button>
+        </div>
+        <div class="place-card">
+          <img src="images/yala.jpg" alt="Yala">
+          <h3>Yala</h3>
+          <p>Enjoy exciting wildlife safaris to see leopards and elephants.</p>
+          <button type="button" class="btn btn-green">View more</button>
+        </div>
+        <div class="place-card">
+          <img src="images/nuwara-eliya.jpg" alt="Nuwara Eliya">
+          <h3>Nuwara Eliya</h3>
+          <p>Visit the misty tea plantations and rolling green hills.</p>
+          <button type="button" class="btn btn-green">View more</button>
+        </div>
+      </div>
+    </section>
+
+    <section id="services" class="services">
+      <h2>Our Services</h2>
+      <p class="subtitle">Everything you need for a perfect trip</p>
+
+      <div class="service-grid">
+        <div class="service-card">
+          <img src="images/icon-compass.png" alt="">
+          <h3>Travel Guidance</h3>
+          <p>Get expert travel tips and recommendations.</p>
+        </div>
+        <div class="service-card">
+          <img src="images/icon-bed.png" alt="">
+          <h3>Accommodation</h3>
+          <p>Find the best stays across Sri Lanka.</p>
+        </div>
+        <div class="service-card">
+          <img src="images/icon-bus.png" alt="">
+          <h3>Transport</h3>
+          <p>Book buses, trains and rides with ease.</p>
+        </div>
+        <div class="service-card">
+          <img src="images/icon-bag.png" alt="">
+          <h3>Tour Packages</h3>
+          <p>Discover curated travel packages.</p>
+        </div>
+        <div class="service-card">
+          <img src="images/icon-support.png" alt="">
+          <h3>Local Support</h3>
+          <p>Get assistance during your journey.</p>
+        </div>
+        <div class="service-card">
+          <img src="images/icon-info.png" alt="">
+          <h3>Travel Information</h3>
+          <p>Useful info about weather, safety and more.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="festivals" class="festivals">
+      <h2>Upcoming Festivals</h2>
+      <p class="subtitle">Experience Sri Lanka's vibrant culture.</p>
+
+      <div class="festival-grid">
+        <div class="festival-card">
+          <img src="images/vesak.jpg" alt="Vesak lanterns">
+          <h3>Vesak</h3>
+          <p>May</p>
+        </div>
+        <div class="festival-card">
+          <img src="images/perahera.jpg" alt="Kandy Esala Perahera">
+          <h3>Kandy-Esala Perahera</h3>
+          <p>July - August</p>
+        </div>
+        <div class="festival-card">
+          <img src="images/new-year.jpg" alt="New year food table">
+          <h3>Sinhala and Tamil New Year</h3>
+          <p>April</p>
+        </div>
+      </div>
+
+      <a href="#" class="btn btn-green btn-wide">View All Festivals &rarr;</a>
+    </section>
+
+    <section id="guide" class="guide">
+
+      <div class="guide-top">
+        <img src="images/train.jpg" alt="Train in Sri Lanka">
+
+        <div class="accordion">
+          <div class="acc-item">
+            <button class="acc-title">Travel Tips <span>+</span></button>
+            <div class="acc-body"><p>Carry cash for small shops, dress modestly at temples and book trains early.</p></div>
+          </div>
+          <div class="acc-item">
+            <button class="acc-title">Safety Tips <span>+</span></button>
+            <div class="acc-body"><p>Keep valuables safe, use registered taxis and never lean out of moving trains.</p></div>
+          </div>
+          <div class="acc-item">
+            <button class="acc-title">Weather Guides <span>+</span></button>
+            <div class="acc-body"><p>The west and south coasts are best from December to March; the east coast from April to September.</p></div>
+          </div>
+          <div class="acc-item">
+            <button class="acc-title">Transport Options <span>+</span></button>
+            <div class="acc-body"><p>Trains, buses, tuk-tuks and private drivers are all available across the island.</p></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="guide-bottom">
+        <div class="guide-left">
+          <h2>Featured Guides</h2>
+          <a href="guides.html" class="btn btn-green">View More Guides &rarr;</a>
+        </div>
+
+        <div class="guide-card">
+          <div class="guide-person">
+            <img src="images/guide.png" alt="Manoj Perera">
+            <h3>Manoj Perera</h3>
+            <p>Certified Cultural Guide<br>(15+ Years Experience)</p>
+          </div>
+          <ul>
+            <li>A passionate expert in Sri Lanka's cultural heritage. Specializes in temple history and ancient sites.</li>
+            <li>Languages: English, German, Sinhalese.</li>
+            <li>Ratings: &#9733;&#9733;&#9733;&#9733;&#9733; (4.9 / 5, based on 115 reviews)</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+    <p>&copy; 2026 Lankora. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

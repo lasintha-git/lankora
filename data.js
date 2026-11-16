@@ -1,0 +1,50 @@
+/* Photos: images/<img>.jpg, images/<img>-2.jpg, images/<img>-3.jpg  (missing ones are skipped automatically) */
+const PLACES = {
+  'Ella': { img:'ella', district:'Badulla', tagline:'Mountains, waterfalls and the famous hill-country train.',
+    about:'Ella is a small hill town surrounded by tea estates, cloud-covered peaks and deep valleys. It is a favourite for easy hikes and for one of the most scenic train rides in the world.',
+    best:'January to March (driest, clearest views)', getting:'Train from Kandy (about 6-7 hours) or by road from Colombo (about 6 hours).',
+    highlights:['Nine Arches Bridge','Little Adam\'s Peak hike','Ravana Falls','Kandy to Ella train ride']},
+  'Kandy': { img:'kandy', district:'Central Province', tagline:'The cultural capital and home of the Temple of the Tooth.',
+    about:'Kandy is a lakeside hill city and the last royal capital of Sri Lanka. It is the centre of Buddhist pilgrimage and the home of the yearly Esala Perahera festival.',
+    best:'December to April; July-August for the Perahera', getting:'About 3 hours by road or train from Colombo.',
+    highlights:['Temple of the Tooth Relic','Kandy Lake walk','Royal Botanic Gardens, Peradeniya','Cultural dance show']},
+  'Sigiriya': { img:'sigiriya', district:'Matale / Dambulla', tagline:'The ancient rock fortress rising above the jungle.',
+    about:'Sigiriya is a 5th-century palace built on top of a huge rock, famous for its mirror wall, frescoes and the Lion Gate. The view from the summit covers the whole central plain.',
+    best:'January to April; climb early morning to avoid heat', getting:'About 4 hours by road from Colombo; 30 minutes from Dambulla.',
+    highlights:['Climb Sigiriya Rock','Sigiriya frescoes','Pidurangala Rock sunrise','Dambulla Cave Temple']},
+  'Galle': { img:'galle', district:'Southern Province', tagline:'A Dutch fort town on the edge of the Indian Ocean.',
+    about:'Galle Fort is a UNESCO World Heritage Site with old Dutch ramparts, a lighthouse, boutique cafes and quiet lanes. Sunset on the ramparts is a must.',
+    best:'December to April', getting:'About 2 hours by expressway from Colombo.',
+    highlights:['Galle Fort ramparts','Galle Lighthouse','Dutch Reformed Church','Unawatuna beach nearby']},
+  'Yala': { img:'yala', district:'Hambantota', tagline:'Safari country, home to leopards and elephants.',
+    about:'Yala National Park has one of the highest leopard densities in the world, along with elephants, sloth bears, crocodiles and hundreds of bird species.',
+    best:'February to July', getting:'About 5-6 hours by road from Colombo; jeep safaris start from Tissamaharama.',
+    highlights:['Morning jeep safari','Leopard spotting','Sithulpawwa temple','Bird watching']},
+  'Nuwara Eliya': { img:'nuwara-eliya', district:'Central Province', tagline:'Misty tea country known as "Little England".',
+    about:'Nuwara Eliya sits at about 1,900 m, with cool weather, colonial-era buildings, rolling tea plantations and waterfalls. Bring a jacket.',
+    best:'March to May (April has the town\'s spring season)', getting:'About 5 hours by road from Colombo.',
+    highlights:['Tea factory tour','Gregory Lake','Horton Plains and World\'s End','Lover\'s Leap Falls']},
+  'Mirissa': { img:'mirissa', district:'Matara', tagline:'Golden beaches and whale watching.',
+    about:'Mirissa is a relaxed beach town with palm-lined sand, surf spots and some of the best whale and dolphin watching in Asia.',
+    best:'November to April', getting:'About 3 hours by expressway from Colombo.',
+    highlights:['Whale watching','Coconut Tree Hill','Parrot Rock','Secret Beach']}
+};
+
+/* Sample guide data: replace names, numbers and reviews with real ones */
+const GUIDES = [
+  { id:'manoj', name:'Manoj Perera', role:'Certified Cultural Guide', years:15, photo:'images/guide.png',
+    langs:['English','German','Sinhalese'], rating:4.9, count:115, phone:'+94 77 123 4567', email:'manoj@lankora.lk',
+    places:['Kandy','Sigiriya','Galle'],
+    bio:'A passionate expert in Sri Lanka\'s cultural heritage. Specializes in temple history and ancient sites.',
+    reviews:[{n:'Anna K.',t:'Manoj made Sigiriya come alive. Great stories and very patient.'},{n:'Daniel R.',t:'Best guide we had on our trip. Highly recommended.'}]},
+  { id:'nimali', name:'Nimali Fernando', role:'Nature & Hiking Guide', years:9,
+    langs:['English','Sinhalese','French'], rating:4.8, count:78, phone:'+94 71 234 5678', email:'nimali@lankora.lk',
+    places:['Ella','Nuwara Eliya'],
+    bio:'Leads hikes and train journeys through the hill country, with deep knowledge of tea estates and local plants.',
+    reviews:[{n:'Sophie M.',t:'Little Adam\'s Peak at sunrise with Nimali was the highlight of our trip.'},{n:'Ravi S.',t:'Friendly, safe and well organised.'}]},
+  { id:'kasun', name:'Kasun Jayawardena', role:'Wildlife Safari Guide', years:12,
+    langs:['English','Sinhalese','Tamil'], rating:4.9, count:92, phone:'+94 76 345 6789', email:'kasun@lankora.lk',
+    places:['Yala','Mirissa'],
+    bio:'A trained naturalist who knows every track in Yala and the best whale-watching routes off Mirissa.',
+    reviews:[{n:'James T.',t:'We saw two leopards thanks to Kasun\'s tracking skills.'},{n:'Lena P.',t:'Knowledgeable and kind. Amazing whale day.'}]}
+];
